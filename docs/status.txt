@@ -1,0 +1,4 @@
+tannuzzo@linprog7.cs.fsu.edu:~/CEN4020/Assignment2/assignment2-1> git status
+# On branch master
+nothing to commit, working directory clean
+tannuzzo@linprog7.cs.fsu.edu:~/CEN4020/Assignment2/assignment2-1>
