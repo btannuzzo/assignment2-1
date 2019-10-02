@@ -1,0 +1,123 @@
+Problem 2E:
+
+a)tannuzzo@linprog7.cs.fsu.edu:~/CEN4020/Assignment2/assignment2-1> git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': btannuzzo
+Password for 'https://btannuzzo@github.com':
+Counting objects: 5, done.
+Delta compression using up to 56 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 453 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/btannuzzo/assignment2-1.git
+   c9508fa..9be5a00  master -> master
+tannuzzo@linprog7.cs.fsu.edu:~/CEN4020/Assignment2/assignment2-1>
+
+----------------------------------------------------------------------------------------
+
+b) There have been 9 commits. The command I used was: git rev-list --all --count
+
+(I also used git log and counted all the commits logged)
+
+So, this is the command and the output: 
+
+tannuzzo@linprog7.cs.fsu.edu:~/CEN4020/Assignment2/assignment2-1> git rev-list --all --count
+9
+
+----------------------------------------------------------------------------------------
+
+c) It says that the file was last modified Wednesday Septemeber 25, 2019 at 6:13 pm by Esteban.
+I used the cammand: git log
+
+commit e424a923e80da4772ca789591ef3326230062a71
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+    -> Tracking .gitignore
+
+:000000 100644 0000000... f9bb546... A  .gitignore
+
+
+----------------------------------------------------------------------------------------
+
+
+d) Branches are used in git because there is no storage/memory overhead with making many
+branches so it's easier to logically divide up the work. Also, branches are effectively 
+a pointer to a snapshot of one's changes, so it is harder for unstable
+code to get merged into the main code base. 
+
+
+----------------------------------------------------------------------------------------
+
+
+e) The difference between git log and git status is that git log shows the log of all the 
+commits, whether that be from one user or another. Git status shows the working tree
+status, so only the commits and paths from that current HEAD master.
+
+
+----------------------------------------------------------------------------------------
+
+
+f) The command I would use to see the commits where "Vehicle.h" was one of the commited
+files is: git log --follow -- "Vehicle.h"
+
+
+----------------------------------------------------------------------------------------
+
+
+g) The command I would use to see the commits whose commit message contains the word "file" is:
+ git log --grep='file'
+
+
+----------------------------------------------------------------------------------------
+
+
+h)
+I: Inheritance is the mechanism where one can derive a class from another class for a 
+hierarchy of classes that share a set of attributes and methods
+
+II: Polymorphism is the idea of an object taking many forms. In object oriented programming, 
+polymorphism occurs when a parent class reference is used to refer to a child class object.
+
+III: Encapsulation describes the idea of bundling data and methods that work on that data 
+within one unit (such as a class). Encapsulation is also used to hide internal representation.
+
+
+----------------------------------------------------------------------------------------
+
+
+i) The main difference between the "Dictator and Lieutenants" workflow and the 
+"Integration Manager" workflow is that the "Dictator and Lieutenants" workflow only has
+one central/blessed repository in which only the dictator can push to it. In the 
+"Integration Manager" workflow, the developers each have two of their own repositories
+in which they push and pull to and from it.
+
+
+----------------------------------------------------------------------------------------
+
+
+j) A team of 100 developers could benefit from following the “Dictator and Lieutenants”
+workflow instead of the “Centralized” workflow since the dictator would be the only one
+pushing to the repository. In the "Centralized" workflow, since everyone can push to 
+and pull from the shared repository, more merging conflicts can develop and more problems
+with the code can arise. 
+
+
+----------------------------------------------------------------------------------------
+
+
+
