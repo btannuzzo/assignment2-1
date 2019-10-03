@@ -23,3 +23,8 @@ double Motorcycle::mileageEstimate(double time){
 	
 	return mileage;
 }
+
+
+string Motorcycle::toString(){
+	return "-> Motorcycle\n" + PoweredVehicle::toString();
+}
