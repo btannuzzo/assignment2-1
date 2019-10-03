@@ -3,7 +3,7 @@
 //
 
 #include "Jet.h"
-
+#include <ctime>
 
 Jet::Jet(string brand, string model, string fuelType, int numOfEngines){
 	setBrand(brand);
@@ -25,5 +25,8 @@ void Jet::setNumberOfEngines(int numOfEngines){
 }
 
 double Jet::mileageEstimate(double time){
+	double mileage = (rand()%41 + 60) * time;
+	
+		
 
 }
