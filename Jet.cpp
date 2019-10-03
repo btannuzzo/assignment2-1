@@ -14,3 +14,7 @@ Jet::Jet(string brand, string model, string fuelType, int numberOfEngines){
 
 
 Jet::~Jet() = default;
+
+int Jet::getNumberOfEngines(){
+	return numberOfEngines;
+}
