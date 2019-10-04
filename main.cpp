@@ -1,5 +1,8 @@
 #include <iostream>
 #include <ctime>
+#include <math.h>
+#include <stdio.h>
+
 #include "Car.h"
 #include "Bicycle.h"
 #include "Jet.h"
