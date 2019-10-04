@@ -119,5 +119,21 @@ with the code can arise.
 
 ----------------------------------------------------------------------------------------
 
+******Problem 5******
 
+The Driving simulator prototype does use encapsulation. It does this by hiding the data
+of the private attributes of the different header and cpp files. For example, myBrand
+and myModel in class Vehicle are private variables and in order to access them  (view
+and change them) outside this class, we need to use accessor and mutator methods: getBrand,
+getModel, setBrand, and setModel. 
+
+The Driving simulator prototype also uses polymorphishm. We have various examples of this
+in the classes in this simulator. For example, we have virtual functions which enables 
+run time polymorphism: the base class contains the virtual function and the base class
+pointer points to a dervied class object and the class itself, so this enables a redefinition
+of the virtual function. Also, we see an example of function overloading, another 
+characteristic of polymorphism, with the function mileageEstimate(double time).
+
+(This website helped:
+https://www.go4expert.com/articles/encapsulation-inheritance-polymorphism-t29981/) 
 
