@@ -17,6 +17,7 @@ Skateboard::~Skateboard() = default;
 double Skateboard::mileageEstimate(double time){
 	double mileage = rand() % 41 + 10;
 	mileage /= 100;
+	floor(mileage);
 	mileage *= time; 
 	
 	double thirdOfTime = time/3;
